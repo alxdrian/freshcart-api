@@ -23,4 +23,8 @@ foods.each do |food|
     image = URI.open(food[:image])
     Food.last.image.attach(io: image, filename: 'food.jpg', content_type: 'image/jpg')
 end
+
+puts 'Creating users...'
+user1 = User.create(email: 'user1@mail.com', name: 'user1', surname: 'test', password: 'password', password_confirmation: 'password')
+
 puts 'Finished!'
