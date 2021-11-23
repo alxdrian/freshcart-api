@@ -26,5 +26,8 @@ end
 
 puts 'Creating users...'
 user1 = User.create(email: 'user1@mail.com', name: 'user1', surname: 'test', password: 'password', password_confirmation: 'password')
+user2 = User.create(email: 'user2@mail.com', name: 'user2', surname: 'test', password: 'password', password_confirmation: 'password')
+user3 = User.create(email: 'user3@mail.com', name: 'user3', surname: 'test', password: 'password', password_confirmation: 'password')
+user4 = User.create(email: 'user4@mail.com', name: 'user4', surname: 'test', password: 'password', password_confirmation: 'password')
 
 puts 'Finished!'
